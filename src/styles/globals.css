@@ -1280,13 +1280,15 @@ footer {
 @media (max-width: 768px) {
   /* Hide video — saves huge GPU on mobile */
   #hero-bg,
-  #about-bg { display: none; }
+  #about-bg,
+  #buy-bg { display: none; }
 
   /* Poster images as CSS background instead */
   .hero-bg-wrapper {
     background: url('/assets/seqwebp1.webp') center/cover no-repeat;
   }
-  .about-bg-wrapper {
+  .about-bg-wrapper,
+  .buy-bg-wrapper {
     background: url('/assets/final.webp') center/cover no-repeat;
   }
 }
