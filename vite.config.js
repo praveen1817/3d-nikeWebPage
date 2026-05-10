@@ -10,9 +10,9 @@ export default defineConfig({
     target: 'es2020',
     rollupOptions: {
       output: {
-        manualChunks: {
-          gsap:  ['gsap'],
-          lenis: ['@studio-freight/lenis'],
+        manualChunks(id) {
+          if (id.includes('node_modules/gsap')) return 'gsap';
+          if (id.includes('node_modules/@studio-freight/lenis')) return 'lenis';
         },
       },
     },
