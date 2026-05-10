@@ -7,7 +7,7 @@ import './styles/globals.css';
 
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import Lenis from '@studio-freight/lenis';
+import Lenis from 'lenis';
 
 import { runLoader }   from './loader.js';
 import { initHero }    from './hero.js';

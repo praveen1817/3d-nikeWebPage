@@ -12,7 +12,7 @@ export default defineConfig({
       output: {
         manualChunks(id) {
           if (id.includes('node_modules/gsap')) return 'gsap';
-          if (id.includes('node_modules/@studio-freight/lenis')) return 'lenis';
+          if (id.includes('node_modules/lenis')) return 'lenis';
         },
       },
     },
